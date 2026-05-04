@@ -36,8 +36,6 @@ To get the pipeline running from scratch, open your terminal in the root folder 
    ```
    *(This will open the Dagster UI where you can trigger your pipeline runs).*
 
----
-
 ## Available Commands Reference
 
 Here is the full list of Makefile commands available to manage the project:
