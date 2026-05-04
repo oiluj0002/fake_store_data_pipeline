@@ -1,0 +1,15 @@
+[project]
+name = "fake-store-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "dagster>=1.13.3",
+    "dagster-docker>=0.29.3",
+    "dagster-webserver>=1.13.3",
+    "python-dotenv>=1.2.2",
+]
+
+[tool.uv.workspace]
+exclude = ["extract", "transform"]

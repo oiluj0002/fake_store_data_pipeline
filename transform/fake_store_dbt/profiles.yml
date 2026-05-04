@@ -1,0 +1,16 @@
+fake_store_dbt:
+    outputs:
+        dev:
+            type: duckdb
+            path: "lakehouse.duckdb"
+            extensions:
+                - httpfs
+            settings:
+                s3_endpoint: "host.docker.internal:9000"
+                s3_access_key_id: "{{ env_var('AWS_ACCESS_KEY_ID') }}"
+                s3_secret_access_key: "{{ env_var('AWS_SECRET_ACCESS_KEY') }}"
+                s3_use_ssl: false
+                s3_url_style: "path"
+            threads: 4
+
+    target: dev

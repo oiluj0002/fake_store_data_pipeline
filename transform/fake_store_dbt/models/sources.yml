@@ -1,0 +1,12 @@
+sources:
+    - name: bronze
+      description: "Raw Parquet files extracted from the Fake Store API via dlt"
+      meta:
+          external_location: "{{ env_var('AWS_BUCKET_URL') }}/bronze/{name}/*.parquet"
+      tables:
+          - name: products
+            description: "Raw products catalog"
+          - name: carts
+            description: "User shopping carts"
+          - name: users
+            description: "User account information"
