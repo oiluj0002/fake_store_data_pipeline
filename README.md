@@ -46,4 +46,3 @@ Here is the full list of Makefile commands available to manage the project:
 * **`make build-all`**: Builds both the extraction and transformation Docker images.
 * **`make dev`**: Starts the local Dagster UI for orchestrating the pipeline.
 * **`make clean-data`**: Stops the MinIO containers and completely deletes the local `data` folder (requires `sudo` permissions). **Warning: This permanently deletes your bucket data.**
-```
