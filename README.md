@@ -2,6 +2,9 @@
 
 This project is a local data engineering pipeline built with a modern data stack. It extracts data from a REST API, loads it into a local MinIO S3 bucket, and transforms it through Medallion architecture (Bronze, Silver, Gold). The entire process is orchestrated using Dagster.
 
+## Architecture
+![Proposed architecture of this project](architecture.png)
+
 ## Tech Stack
 * **Orchestration:** Dagster
 * **Extraction & Loading:** dlt (running in Docker)
